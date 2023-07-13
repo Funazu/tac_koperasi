@@ -8,6 +8,7 @@
 
         <!-- This Menu Item Must have a parent -->
         <menuitem id="membership_menu_categ" name="Membership" parent="koperasi_menu_root" sequence="20"/>
+        <menuitem id="transaction_menu_categ" name="Transaction" parent="koperasi_menu_root" sequence="20"/>
         <menuitem id="setting_menu_categ" name="Settings" parent="koperasi_menu_root" sequence="20"/>
     </data>
     

@@ -11,7 +11,7 @@
                     <field name="name"/>
                     <field name="amount"/>
                     <field name="membership_type"/>
-                    <!-- <field name="is_active"/> -->
+                    <field name="is_active"/>
                 </tree>
             </field>
         </record>

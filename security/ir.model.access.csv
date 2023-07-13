@@ -2,3 +2,4 @@ id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
 access_membership,access_membership,model_membership_member,,1,1,1,1
 access_membership_fee,access_membership_fee,model_membership_fee,,1,1,1,1
 access_membership_registration,access_membership_registration,model_membership_registration,,1,1,1,1
+access_membership_share_capital,access_membership_share_capital,model_membership_share_capital,,1,1,1,1
