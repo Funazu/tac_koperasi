@@ -18,6 +18,10 @@
                 ],
     'data': [
         'security/ir.model.access.csv',
+        'views/menu.xml',
+        'views/membership_view.xml',
+        'views/membership_fee_view.xml',
+        'views/membership_registration_view.xml'
     ],
     'images': ['static/description/banner.png'],
     'installable': True,

@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<odoo>
+    <data>
+
+        <record id="view_member_registration_tree" model="ir.ui.view">
+            <field name="name">membership.registration.tree</field>
+            <field name="model">membership.registration</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="partner_id"/>
+                    <field name="registration_date"/>
+                    <field name="fee_id"/>
+                    <field name="fee_amount" readonly="1"/>
+                    <field name="approved"/>
+                </tree>
+            </field>
+        </record>
+        
+        <!-- Action for Member Registration -->
+        <record id="membership_registration_action" model="ir.actions.act_window">
+            <field name="name">Member Registration</field>
+            <field name="res_model">membership.registration</field>
+            <field name="view_mode">tree,form</field>
+        </record>
+
+        <!-- Menuitem for Member Registration -->
+        <menuitem id="membership_registration_detail_menu_act" name="Member Registration" parent="membership_menu_categ" action="membership_registration_action" sequence="10"/>
+    </data>
+</odoo>
