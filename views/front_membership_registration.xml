@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+            <template id="membership_registration_form" name="membership_registration_form">
+                <t t-call="website.layout">
+                <title>Member Registration</title>
+                    <div class="row justify-content-center mt-5">
+                        <div class="col-xl-6 col-md-12 mb-2">
+                            <div class="card shadow">
+                                <div class="card-body">
+                                    <h4 class="text-center mb-2">Form Registration Member</h4>
+                                    <form id="form_membership_registration" method="post" action="/member/registration">
+                                    <input type="hidden" name="csrf_token" t-att-value="request.csrf_token()"/>
+                                        <div class="form-group">
+                                            <label for="name">Name</label>
+                                            <input type="text" name="name" class="form-control" required="required"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">Email</label>
+                                            <input type="email" name="email" class="form-control" required="required"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="email">NO.HP</label>
+                                            <input type="number" name="phone" class="form-control" required="required"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Register</button>
+                                        </div>
+                                        <!-- <div class="form-group">
+                                            <label for="fee_id">Membership Fee</label>
+                                            <select name="fee_id" class="form-control" required="required">
+                                                <option value="">Select Fee</option>
+                                                <t t-foreach="fees" t-as="fee">
+                                                    <option t-att-value="fee.id"><t t-esc="fee.name"/></option>
+                                                </t>
+                                            </select>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="membership_amount">Membership Amount</label>
+                                            <input type="number" name="membership_amount" class="form-control" readonly="readonly" required="required"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="membership_type">Membership Type</label>
+                                            <input type="text" name="membership_type" class="form-control" readonly="readonly" required="required"/>
+                                        </div>
+                                        <div class="form-group">
+                                            <button type="submit" class="btn btn-primary">Register</button>
+                                        </div> -->
+                                        <!-- <div class="form-group">
+                                            <strong>Nama</strong>
+                                            <input type="text" name="name" id="name" class="form-control"/>
+                                        </div>
+                                         <div class="form-group">
+                                            <strong>Membership Fee</strong>
+                                            <select name="membership_fee" id="membership_fee" class="form-control">
+                                                <t t-foreach="membership_fee" t-as="fee">
+                                                    <option t-att-value="fee.id">
+                                                        <t t-esc="fee.name" t-att-value="fee.id" required=""/>
+                                                    </option>
+                                                </t>
+                                            </select>
+                                        </div> -->
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </t>
+            </template>
+    </data>
+</odoo>

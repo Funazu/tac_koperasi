@@ -24,6 +24,6 @@
         </record>
 
         <!-- Menuitem for Member Registration -->
-        <menuitem id="membership_registration_detail_menu_act" name="Member Registration" parent="membership_menu_categ" action="membership_registration_action" sequence="10"/>
+        <menuitem id="membership_registration_detail_menu_act" name="Membership Registration" parent="membership_menu_categ" action="membership_registration_action" sequence="10"/>
     </data>
 </odoo>
